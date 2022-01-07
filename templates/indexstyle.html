@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html >
+<head>
+        <meta charset="UTF-8">
+        <title>Predicción de mortalidad</title>
+        <meta charset="utf-8">
+                <meta name="author" content="Andrés Mahía, Antonio Tello Gómez">
+                <meta name="viewport" content="width=device-width, initial-scale=1.0,maximum-scale=1,user-scalable=no">
+        <link rel="stylesheet" href="static/css/AppStyle.css">
+        
+        
+</head>
+
+
+<!-- style="background: rgb(255, 255, 255);" -->
+<body>  
+
+<div class="model_desc">
+        <h2> Model Description </h2><br>
+        <p>This web application is an insurance charges prediction system. The aim of this project is to predict individuals medical insurance charges in dollars based on their status.</p>
+        <p>After inputting the corresponding data, a predicted insurance charges is displayed.<br><br>The Body Mass Index (BMI) is a measure of body fat based on height and weight.<br><br> BMI= m/h &sup2
+                , m = mass (in Kilogram) and h = height (in meters).
+        </p>
+        
+</div>
+
+<div class="data_part">
+        <div class="model_desc2">
+            <h2>Model Description</h2><br>
+            <p>This web application is an insurance charges prediction system.</p>
+            <p>The aim of this project is to predict individuals insurance charges in dollars based on their status.</p>
+        <p>After inputting the corresponding data, a predicted insurance charges is displayed.<br><br>The Body Mass Index (BMI) is a measure of body fat based on height and weight.<br><br> BMI= m/h &sup2
+         , m = mass (in Kilogram) and h = height (in meters).
+        </p>
+    
+        </div>
+
+
+
+    <h1>Fatal accident Forecasting</h1>
+
+    <form action="{{ url_for('predict')}}"method="post">
+            <input class="Input" type="text" name="year" placeholder="Year" required="required" />   
+        <select name="quarter" class="Input">
+                {% for o in quarter %}
+                <option value="{{ o.quarter }}">{{ o.quarter }}</option>
+                {% endfor %}
+            </select>
+        <select name="weekday" class="Input">
+              {% for o in weekday %}
+              <option value="{{ o.weekday }}">{{ o.weekday }}</option>
+              {% endfor %}
+            </select><br><br>
+
+        <select name="comp_select3" class="Input">
+                  {% for o in hour %}
+                  <option value="{{ o.hour }}">{{ o.hour }}</option>
+                  {% endfor %}
+          </select>    
+      <input class="Input" type="text" name="vehicles_involved" placeholder="Vehicles Involved" required="required" />   
+
+      <select name="crash_type" class="Input">
+                  {% for o in crash_type %}
+                  <option value="{{ o.crash_type }}">{{ o.crash_type }}</option>
+                  {% endfor %}
+          </select><br><br> 
+
+      <select name="crash_place" class="Input">
+              {% for o in crash_place %}
+              <option value="{{ o.crash_place }}">{{ o.crash_place }}</option>
+              {% endfor %}
+      </select>
+
+      <select name="crash_weather" class="Input">
+              {% for o in crash_weather %}
+              <option value="{{ o.crash_weather }}">{{ o.crash_weather }}</option>
+              {% endfor %}
+      </select>
+      <select name="surface_state" class="Input">
+              {% for o in surface_state %}
+              <option value="{{ o.surface_state }}">{{ o.surface_state }}</option>
+              {% endfor %}
+      </select><br><br>
+
+      <select name="road_slope" class="Input">
+              {% for o in road_slope %}
+              <option value="{{ o.road_slope }}">{{ o.road_slope }}</option>
+              {% endfor %}
+      </select>
+
+      <select name="traffic_state" class="Input">
+              {% for o in traffic_state %}
+              <option value="{{ o.traffic_state }}">{{ o.traffic_state }}</option>
+              {% endfor %}
+      </select>
+
+      <select name="vehicle_type" class="Input">
+              {% for o in vehicle_type %}
+              <option value="{{ o.vehicle_type }}">{{ o.vehicle_type }}</option>
+              {% endfor %}
+      </select><br><br> 
+      
+      <input class="Input" type="text" name="vehicle_age" placeholder="Vehicle Age" required="required" />  
+
+      <select name="passenger_sex" class="Input">
+              {% for o in passenger_sex %}
+              <option value="{{ o.passenger_sex }}">{{ o.passenger_sex }}</option>
+              {% endfor %}
+      </select> 
+      <input class="Input" type="text" name="passenger_age" placeholder="Passenger Age" required/><br><br>
+
+      <select name="passenger_safety" class="Input">
+              {% for o in passenger_safety %}
+              <option value="{{ o.passenger_safety }}">{{ o.passenger_safety }}</option>
+              {% endfor %}
+      </select> 
+      
+      <select name="passenger_type" class="Input">
+              {% for o in passenger_type %}
+              <option value="{{ o.passenger_type }}">{{ o.passenger_type }}</option>
+              {% endfor %}
+      </select><br><br> 
+      
+      <button type="submit" class="pred-btn"> Predict </button>
+
+</form>
+        <h3> {{prediction_text}} </h3>
+        <h1> {{prediction_prob}} </h1>
+ </div>
+
+
+</body>
+</html>
