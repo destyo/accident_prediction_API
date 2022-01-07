@@ -16,7 +16,9 @@ from sklearn.pipeline import Pipeline
 from sklearn.compose import ColumnTransformer
 from sklearn.model_selection import GridSearchCV
 
-
+abspath = os.path.abspath(__file__)
+dname = os.path.dirname(abspath)
+os.chdir(dname)
 ruta = "NCDB_1999_to_2014.csv"
 df = pd.read_csv(ruta)
 

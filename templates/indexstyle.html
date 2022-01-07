@@ -16,17 +16,18 @@
 <body>  
 
 <div class="model_desc">
-        <h2> Model Description </h2><br>
-        <p>This web application is an insurance charges prediction system. The aim of this project is to predict individuals medical insurance charges in dollars based on their status.</p>
-        <p>After inputting the corresponding data, a predicted insurance charges is displayed.<br><br>The Body Mass Index (BMI) is a measure of body fat based on height and weight.<br><br> BMI= m/h &sup2
-                , m = mass (in Kilogram) and h = height (in meters).
-        </p>
-        
-</div>
+        <h2> Descripción del modelo </h2><br>
+        <p>Esta aplicación web es una simulación de puesta en producción de nuestro proyecto final de Machine Learning:</p>
+        <p><a href="https://github.com/destyo/accident_prediction" target="_blank">acident_prediction</a> </p>
+        <p>El objetivo de la misma es devolver una predicción de si un accidente ha resultado fatal sabiendo sus características. <br><br> Tras imputar los datos la aplicación devuelve la predicción del modelo.<br><br> 
+        <a href="./data_dictionary.pdf" target="_blank">Diccionario de datos</a>
+
+
+        </div>
 
 <div class="data_part">
         <div class="model_desc2">
-            <h2>Model Description</h2><br>
+            <h2>Descripción del modelo</h2><br>
             <p>This web application is an insurance charges prediction system.</p>
             <p>The aim of this project is to predict individuals insurance charges in dollars based on their status.</p>
         <p>After inputting the corresponding data, a predicted insurance charges is displayed.<br><br>The Body Mass Index (BMI) is a measure of body fat based on height and weight.<br><br> BMI= m/h &sup2
@@ -37,7 +38,7 @@
 
 
 
-    <h1>Fatal accident Forecasting</h1>
+    <h1>Car Accident Fatality</h1>
 
     <form action="{{ url_for('predict')}}"method="post">
             <input class="Input" type="text" name="year" placeholder="Year" required="required" />   
@@ -107,7 +108,7 @@
               <option value="{{ o.passenger_sex }}">{{ o.passenger_sex }}</option>
               {% endfor %}
       </select> 
-      <input class="Input" type="text" name="passenger_age" placeholder="Passenger Age" required/><br><br>
+      <input class="Input" type="text" name="passenger_age" placeholder="Person Age" required/><br><br>
 
       <select name="passenger_safety" class="Input">
               {% for o in passenger_safety %}

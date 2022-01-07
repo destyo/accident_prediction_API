@@ -23,30 +23,41 @@ def crea_dict(variable, nombre):
 
     return lista
 
+def var_temporales(var,nombre,rango): 
+    list = [{var: nombre}]
+    for opcion in rango:
+        list.append({var: opcion})
+    return list 
 
 @app.route('/')
 def home():
     return render_template(
         'indexstyle.html',
-        quarter = crea_dict('quarter', 'trimestre'),
-        weekday = crea_dict('weekday', 'dia de la semana'),
-        hour = crea_dict('hour', 'hora'),
-        crash_type = crea_dict('crash_type', 'tipo de accidente'),
-        crash_place = crea_dict('crash_place', 'lugar del accidente'),
-        crash_weather = crea_dict('crash_weather', 'clima'),
-        surface_state = crea_dict('surface_state', 'superficie'),
-        road_slope = crea_dict('road_slope', 'inclinacion'),
-        traffic_state = crea_dict('traffic_state', 'estado del trafico'),
-        vehicle_type = crea_dict('vehicle_type', 'tipo de vehiculo'),
-        passenger_sex = crea_dict('passenger_sex', 'sexo'),
-        passenger_safety = crea_dict('passenger_safety', 'medida de seguridad'),
-        passenger_type = crea_dict('passenger_type', 'tipo de pasajero')
+        quarter = var_temporales('quarter', 'Month', range(1,13)),
+        weekday = var_temporales('weekday', 'Day of week', range(1,8)),
+        hour = var_temporales('hour', 'Hour', range(0,24)),
+        crash_type = crea_dict('crash_type','Collision configuration'),
+        crash_place = crea_dict('crash_place','Roadway configuration'),
+        crash_weather = crea_dict('crash_weather','Weather condition'),
+        surface_state = crea_dict('surface_state','Road surface'),
+        road_slope = crea_dict('road_slope','Road alignment'),
+        traffic_state = crea_dict('traffic_state','Traffic control'),
+        vehicle_type = crea_dict('vehicle_type', 'Vehicle type'),
+        passenger_sex = crea_dict('passenger_sex', 'Person sex' ),
+        passenger_safety = crea_dict('passenger_safety', 'Safety device used'),
+        passenger_type = crea_dict('passenger_type', 'Road user class' )
         )
 
 @app.route('/predict',methods=['POST'])
 def predict():
 
     input_data = list(request.form.values())
+    
+    if int(input_data[0]) & int(input_data[4]) & int(input_data[12]) & int(input_data[14]) == True:
+        pass
+    else:
+        print(ValueError)
+        
 
     array_values = np.array(input_data)
 
@@ -64,19 +75,19 @@ def predict():
 
     return render_template('indexstyle.html', prediction_text='La predicción de mortalidad es del',
                                     prediction_prob='{}%'.format(output),
-                                    quarter = crea_dict('quarter', 'trimestre'),
-                                    weekday = crea_dict('weekday', 'dia de la semana'),
-                                    hour = crea_dict('hour', 'hora'),
-                                    crash_type = crea_dict('crash_type', 'tipo de accidente'),
-                                    crash_place = crea_dict('crash_place', 'lugar del accidente'),
-                                    crash_weather = crea_dict('crash_weather', 'clima'),
-                                    surface_state = crea_dict('surface_state', 'superficie'),
-                                    road_slope = crea_dict('road_slope', 'inclinacion'),
-                                    traffic_state = crea_dict('traffic_state', 'estado del trafico'),
-                                    vehicle_type = crea_dict('vehicle_type', 'tipo de vehiculo'),
-                                    passenger_sex = crea_dict('passenger_sex', 'sexo'),
-                                    passenger_safety = crea_dict('passenger_safety', 'medida de seguridad'),
-                                    passenger_type = crea_dict('passenger_type', 'tipo de pasajero')
+                                    quarter = var_temporales('quarter', 'Month', range(1,13)),
+                                    weekday = var_temporales('weekday', 'Day of week', range(1,8)),
+                                    hour = var_temporales('hour', 'Hour', range(0,24)),
+                                    crash_type = crea_dict('crash_type','Collision configuration'),
+                                    crash_place = crea_dict('crash_place','Roadway configuration'),
+                                    crash_weather = crea_dict('crash_weather','Weather condition'),
+                                    surface_state = crea_dict('surface_state','Road surface'),
+                                    road_slope = crea_dict('road_slope','Road alignment'),
+                                    traffic_state = crea_dict('traffic_state','Traffic control'),
+                                    vehicle_type = crea_dict('vehicle_type', 'Vehicle type'),
+                                    passenger_sex = crea_dict('passenger_sex', 'Person sex' ),
+                                    passenger_safety = crea_dict('passenger_safety', 'Safety device used'),
+                                    passenger_type = crea_dict('passenger_type', 'Road user class' )
                                     )
 
 # @app.route('/results',methods=['POST'])
