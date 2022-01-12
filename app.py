@@ -68,6 +68,14 @@ def predict():
                                             'vehicle_age', 'passenger_sex', 'passenger_age'
                                             ,'passenger_safety', 'passenger_type'])
 
+    input_df['quarter'] = (pd.to_numeric(input_df['quarter'])-1)//3 + 1
+    input_df['weekday'] = input_df['weekday'].replace({6:3, 7:3, 1:2, 4:2, 5:2, 2:1, 3:1})
+    input_df['hour'] = input_df['hour'].replace({0:1, 1:1, 2:1, 3:1, 4:1, 5:1, 6:2, 7:2, 8:2, 9:3, 10:3, 11:3, 11:4, 12:4, 13:4, 14:4, 15:4, 16:4, 17:4, 18:4, 19:5, 20:5, 21:5, 22:6, 23:6})
+
+
+
+
+
     pred = model.predict_proba(input_df)[:,1]
     
     output = np.round(*pred, 3) * 100
