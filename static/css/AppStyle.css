@@ -12,6 +12,29 @@ text-align:center;
 
 }
 
+/* CSS */
+.button-12 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 6px 14px;
+  font-family: -apple-system, BlinkMacSystemFont, 'Roboto', sans-serif;
+  border-radius: 6px;
+  border: none;
+
+  background: #6E6D70;
+  box-shadow: 0px 0.5px 1px rgba(0, 0, 0, 0.1), inset 0px 0.5px 0.5px rgba(255, 255, 255, 0.5), 0px 0px 0px 0.5px rgba(0, 0, 0, 0.12);
+  color: #DFDEDF;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
+
+.button-12:focus {
+  box-shadow: inset 0px 0.8px 0px -0.25px rgba(255, 255, 255, 0.2), 0px 0.5px 1px rgba(0, 0, 0, 0.1), 0px 0px 0px 3.5px rgba(58, 108, 217, 0.5);
+  outline: 0;
+}
+
 h1{
 text-align:center;
 color: 	rgb(49, 49, 49);
@@ -52,6 +75,47 @@ border-radius:30px;
 
 
 }
+
+.pred-btn-2{
+  text-align:center;
+  height:30px;
+  width:150px;
+  margin-top:10px;
+  font-size:20px;
+  background:linear-gradient(to left top,rgb(114, 111, 129),rgb(0, 0, 0)100%);
+  color:white;
+  border:2px solid white;
+  border-radius:30px;
+  
+  
+  }
+
+
+
+  .pred-btn-3:hover{
+    background:linear-gradient(to right,rgb(189, 53, 192),rgb(15, 173, 207));
+    /* color:black;
+    border:2px solid black; */
+    }
+
+
+    .pred-btn-3{
+      text-align:center;
+      height:30px;
+      width:200px;
+      margin-top:10px;
+      font-size:20px;
+      background:linear-gradient(to left top,rgb(35, 193, 227),rgb(209, 73, 212)100%);
+      color:white;
+      border:2px solid white;
+      border-radius:30px;
+      
+      
+      }
+
+
+
+
 .pred-btn:hover{
 background:linear-gradient(to right,rgb(189, 53, 192),rgb(15, 173, 207));
 /* color:black;
@@ -83,7 +147,7 @@ font:Calibri;
 padding:10px;
 display:inline-box;
 line-height: 1.1em;
-height:420px;
+height:480px;
 margin-left:20%;
 margin-top:90px;
 margin-bottom:10px;
