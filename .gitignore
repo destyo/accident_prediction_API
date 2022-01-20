@@ -30,6 +30,7 @@ __pycache__
 .pytest_cache
 src
 *.csv
+
 .csv
 *.swp
 *.map
@@ -132,3 +133,5 @@ Vagrantfile
 .pickle
 *.pickle
 *.parquet
+*.csv
+.Docker/NCDB_1999_to_2014.csv
