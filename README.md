@@ -3,7 +3,7 @@
 <!-- PROJECT LOGO -->
 <br />
 
-[![Logo Screen Shot][logo-sc]]<div align="center">
+[![Logo Screen Shot][logo-sc]](https://example.com)<div align="center">
 <br />
 
 <h3 align="center">Canadian Crash Accidents Prediction</h3>
