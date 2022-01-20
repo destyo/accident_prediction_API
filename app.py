@@ -79,7 +79,7 @@ def predict():
     pred = model.predict_proba(input_df)[:,1]
     
     output = np.round(*pred, 3) * 100
-    #output = round(pred, 3)123
+
 
     return render_template('indexstyle.html', prediction_text='La predicción de mortalidad es del',
                                     prediction_prob='{}%'.format(output),
@@ -97,15 +97,8 @@ def predict():
                                     passenger_safety = crea_dict('passenger_safety', 'Safety device used'),
                                     passenger_type = crea_dict('passenger_type', 'Road user class' )
                                     )
-
-# @app.route('/results',methods=['POST'])
-# def results():
-
-#     data = request.get_json(force=True)
-#     prediction = model.predict([np.array(list(data.values()))])
-
-#     output = prediction[0]
-#     return jsonify(output)                
-
+    
+    
+    
 if __name__ == "__main__":
     app.run(debug=True)
