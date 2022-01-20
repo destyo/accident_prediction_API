@@ -6,7 +6,7 @@
 [![Logo Screen Shot][logo-sc]]<div align="center">
 <br />
 
-<h3 align="center">Canadian Crash Accidents Prediction</h3>
+<h3 align="center">Crash Accident Prediction: Docker and Flask Deployment</h3>
     <a href="https://github.com/AMM53/accident_prediction-"><strong>Explore the docs »</strong></a>
     <br />
     <a href="https://github.com/AMM53/accident_prediction-">View Demo</a>
@@ -604,11 +604,16 @@ Project Link: [https://github.com/AMM53/accident_prediction](https://github.com/
 [license-url]: https://github.com/AMM53/Car_accident_api/blob/master/LICENSE.txt
 [linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=for-the-badge&logo=linkedin&colorB=555
 [linkedin-url]: https://www.linkedin.com/in/antonio-tello-gomez
-[product-screenshot]: https://www.ctvnews.ca/polopoly_fs/1.4697281.1574439412!/httpImage/image.png_gen/derivatives/landscape_960/image.png
+[product-screenshot]: https://miro.medium.com/max/1400/1*ibvQmpzjBBo2S7fYNurfBw.png
 [result-screenshot]:
-https://drive.google.com/file/d/19PKovoKvENQWvbKLtv-t2CxcP_iLV4wB/view?usp=sharing
+https://i.gyazo.com/f0db3976779baa1d0d5516e661c4432c.png
 [logo-sc]:
-https://drive.google.com/file/d/1WYTbfPat7RFJc-B6RvOye4SMeA-hN_-B/view?usp=sharing
+https://i.gyazo.com/e2960b9d0a36c3900c9493e7b1c459ec.png
+
+
+
+
+
 
 
 
