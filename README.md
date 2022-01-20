@@ -146,8 +146,7 @@ Project Link: [https://github.com/AMM53/accident_prediction](https://github.com/
 [result-screenshot]:
 https://i.gyazo.com/f0db3976779baa1d0d5516e661c4432c.png
 [logo-sc]:
-https://i.gyazo.com/e2960b9d0a36c3900c9493e7b1c459ec.png
-
+https://i.gyazo.com/ea01cd816e64d0d9ad077633330e29e7.png
 
 
 
