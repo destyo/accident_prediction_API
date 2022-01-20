@@ -79,12 +79,12 @@ border-radius:30px;
 
 .yt-btn{
   text-align:center;
-  height:60px;
-  width:150px;
-  margin-top:50px;
-  font-size:25px;
-  background:linear-gradient(to left top,rgb(35, 193, 227),rgb(209, 73, 212)100%);
-  color:rgb(199, 14, 14);
+  height:30px;
+  width:200px;
+  margin-top:10px;
+  font-size:20px;
+  background:linear-gradient(to left top,rgb(190, 86, 86),rgb(255, 0, 0)100%);
+  color:rgb(255, 255, 255);
   border:2px solid white;
   border-radius:30px;
   
@@ -162,7 +162,7 @@ font:Calibri;
 padding:10px;
 display:inline-box;
 line-height: 1.1em;
-height:480px;
+height:520px;
 margin-left:20%;
 margin-top:90px;
 margin-bottom:10px;
