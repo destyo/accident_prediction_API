@@ -142,7 +142,7 @@ Project Link: [https://github.com/destyo/accident_prediction_API](https://github
 [license-url]: https://github.com/AMM53/Car_accident_api/blob/master/LICENSE.txt
 [linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=for-the-badge&logo=linkedin&colorB=555
 [linkedin-url]: https://www.linkedin.com/in/andresmahia/
-[product-screenshot]: https://miro.medium.com/max/1400/1*ibvQmpzjBBo2S7fYNurfBw.png
+[product-screenshot]: https://www.ctvnews.ca/polopoly_fs/1.4697281.1574439412!/httpImage/image.png_gen/derivatives/landscape_960/image.png
 [result-screenshot]:
 https://i.gyazo.com/f0db3976779baa1d0d5516e661c4432c.png
 [logo-sc]:
