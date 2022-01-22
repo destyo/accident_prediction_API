@@ -47,7 +47,7 @@
 
 [![Product Name Screen Shot][product-screenshot]](https://example.com)
 
-This is the second part of the  final project for our Machine Learning course at CUNEF, Madrid.
+This is the second part of our final project for the Machine Learning course at CUNEF, Madrid.
 The goal was to productize and deploy (or at least simulate it) the model developed at the first part.
 There are two main parts in this project. 
 - Back-End: Dockerizing the model, and serving the model via Flask
@@ -112,9 +112,10 @@ Don't forget to give the project a star! Thanks again!
 <!-- CONTACT -->
 ## Contact
 
-Andrés Mahía Morado - amahia5399@gmail.com
+Antonio Tello Gómez - atelloengland@gmail.com
 
-Project Link: [https://github.com/AMM53/accident_prediction](https://github.com/AMM53/accident_prediction)
+Project Link: [https://github.com/destyo/accident_prediction_API](https://github.com/destyo/accident_prediction_API)
+
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
@@ -123,9 +124,8 @@ Project Link: [https://github.com/AMM53/accident_prediction](https://github.com/
 <!-- ACKNOWLEDGMENTS -->
 ## Acknowledgments
 
-* []()Antonio Tello Gómez (@destyo) for working as hard on this project as I did
+* []()Andrés Mahía Morado for working as hard on this project as I did
 <p align="right">(<a href="#top">back to top</a>)</p>
-
 
 
 <!-- MARKDOWN LINKS & IMAGES -->
@@ -146,7 +146,8 @@ Project Link: [https://github.com/AMM53/accident_prediction](https://github.com/
 [result-screenshot]:
 https://i.gyazo.com/f0db3976779baa1d0d5516e661c4432c.png
 [logo-sc]:
-https://i.gyazo.com/ea01cd816e64d0d9ad077633330e29e7.png
+https://drive.google.com/file/d/1WYTbfPat7RFJc-B6RvOye4SMeA-hN_-B/view?usp=sharing
+
 
 
 
