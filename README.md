@@ -146,7 +146,7 @@ Project Link: [https://github.com/destyo/accident_prediction_API](https://github
 [result-screenshot]:
 https://i.gyazo.com/f0db3976779baa1d0d5516e661c4432c.png
 [logo-sc]:
-https://drive.google.com/file/d/1WYTbfPat7RFJc-B6RvOye4SMeA-hN_-B/view?usp=sharing
+https://i.gyazo.com/a8db224efa350e5d5496ae2c29219193.png
 
 
 
